@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: demo;
+    src: url(fonts/CoffeesDemoRegular.ttf);
+
+}
+
+@font-face {
+    font-family: sunday;
+    src: url(fonts/Sunday\ Coffee\ Font\ -\ Free\ Trial.otf) format(opentype), url(fonts/Sunday\ Coffee\ Font\ -\ Free\ Trial.ttf) format(truetype);
+
+}
+        
+@font-face {
+    font-family: latte;
+    src: url(fonts/Coffee\ Latte.ttf);
+
+}
+
+:root {
+
+    /* Colour Palette: */
+    --color0: #f7dad9;
+    --color1: #a5907e;
+    --color2: #786452;
+    --color3: #443730;
+    --color4: #550c18;
+    --shadow: #00000073;
+
+    /* Fonts */
+    --font0: 'demo';
+    --font1: 'sunday';
+    --font2: 'latte';
+
+}
+
+header {
+    background-color: var(--color4);
+    color: var(--color0);
+    font-family: var(--font0);
+    text-align: center;
+
+}
+
+body {
+    background-color: var(--color1);
+
+}
+
+#navColor {
+ background-color: var(--color0);
+ color: var(--color4);
+ margin: 0px;
+
+}
