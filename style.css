@@ -29,17 +29,21 @@
     --shadow: #00000073;
 
     /* Fonts */
-    --font0: 'demo';
-    --font1: 'sunday';
-    --font2: 'latte';
+    --font0: Verdana, Geneva, Tahoma, sans-serif;   /* serif font */
+    --font1: 'sunday';                              /* sans-serif font */
+    --font2: 'demo';                                /* cursive title */
+    --font3: 'latte';                               /* simple title */
 
 }
 
-header {
-    background-color: var(--color4);
-    color: var(--color0);
-    font-family: var(--font0);
-    text-align: center;
+.mainTitle {
+    font-family: var(--font2);
+    color: var(--color1);
+
+}
+
+.title {
+    font-family: var(--font3);
 
 }
 
@@ -49,8 +53,7 @@ body {
 }
 
 #navColor {
- background-color: var(--color0);
- color: var(--color4);
- margin: 0px;
+ background-color: var(--color4);
+ color: var(--color1);
 
 }
