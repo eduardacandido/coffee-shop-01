@@ -36,6 +36,11 @@
 
 }
 
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
 .mainTitle {
     font-family: var(--font2);
     color: var(--color1);
@@ -53,7 +58,15 @@ body {
 }
 
 #navColor {
- background-color: var(--color4);
- color: var(--color1);
+    background-color: var(--color4);
+    color: var(--color1);
+
+}
+
+.formatMap {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 600px;
 
 }
