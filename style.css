@@ -18,6 +18,7 @@
 
 }
 
+/*General*/
 :root {
 
     /* Colour Palette: */
@@ -42,57 +43,15 @@
 
 }
 
-body {
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to bottom, var(--color1), var(--color0));
-    background-size: 100%;
-
-}
-
-header {
-    background-color: var(--color4);
+.formatLink {
+    text-decoration: none;
     color: var(--color1);
 
 }
 
-main {
-    background-color: white;
-    box-shadow: 2px 2px 10px var(--shadow);
-    text-align: justify;
-    max-width: 1000px;
-    margin: 0px auto 50px auto;
-    border-radius: 0px 0px 10px 10px;
-    padding: 10px 20px 30px 20px;
-
-}
-
-footer {
-    width: 100%;
-    height: 30px;
-    background-color: var(--color4);
+.formatLink:hover {
     color: var(--color1);
-
-}
-
-@media only screen and (max-width: 800px) {
-    img {
-        width: 100%;
-
-    }
-    
-  }
-
-img {
-    min-width: 65%;
-    margin: 10px 0px 10px 20px;
-    float: right;
-
-}
-
-strong {
-    color: var(--color4);
-
+    text-decoration: underline;
 }
 
 .titulo {
@@ -109,10 +68,148 @@ strong {
 
 }
 
-.formatMap {
-    margin: 0px;
-    padding: 0px;
+body {
     width: 100%;
-    height: 600px;
+    height: 100%;
+    background-image: linear-gradient(to bottom, var(--color1), var(--color0));
+    background-size: 100%;
 
 }
+
+header {
+    background-color: var(--color4);
+    color: var(--color1);
+
+}
+
+nav {
+    color: var(--color1);
+
+}
+
+main {
+    background-color: white;
+    box-shadow: 2px 2px 10px var(--shadow);
+    text-align: justify;
+    max-width: 1020px;
+    margin: 0px auto 100px auto;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px 20px 30px 20px;
+    clear: both;
+
+}
+
+footer {
+    width: 100%;
+    height: 30px;
+    background-color: var(--color4);
+    color: var(--color1);
+    text-align: center;
+
+}
+
+strong {
+    color: var(--color4);
+
+}
+
+@media only screen and (max-width: 800px) {
+    img {width: 100%;}   
+  }
+
+/*Home page*/
+.imgTitle {
+    background: var(--color4) url(imagens/coffee-beans-heart-1200.jpg) no-repeat center center;
+    background-size: cover;
+    height: 875px;
+
+}
+
+.newsPanel{
+    margin: 50px auto 60px auto;
+    width: 80%;
+    background-color: #a5907e2d;
+    border: 2px solid var(--color4);
+    text-align: center;
+    padding-bottom: 40px;
+
+}
+
+#newsTitle {
+    padding: 10px 30px;
+    text-align: left;
+    color: var(--color4);
+
+}
+
+.square{
+    margin: 2% 1%;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid var(--color4);
+    display: inline-block;
+
+}
+
+.newsTitle {
+    color: var(--color4);
+    background-color: #a5907e46;
+    box-shadow: 1px 1px 5px var(--shadow);
+
+}
+
+.newsText {
+    text-align: justify;
+
+}
+
+.formatMapPanel {
+    margin: 30px 0px;
+    padding: 0px;
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    display: inline-block;
+
+}
+
+.mapText {
+    width: 360px;
+    text-align: justify;
+    display: inline-block;
+
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+
+}
+
+@media only screen and (max-width: 1021px) {
+    .formatMapPanel {width: 100%;}
+    .mapText {width: 100%;}
+}
+
+@media only screen and (min-width: 1020px) {
+    .mapText {padding-left: 10px;}
+}
+
+@media only screen and (max-width: 600px) {
+    .formatMapPanel {height: 400px;} 
+}
+
+@media only screen and (max-height: 850px) {
+    .imgTitle {height: 100%;}
+}
+
+/*About us page*/
+.imgAboutUs {
+    min-width: 65%;
+    margin: 10px 0px 10px 20px;
+    float: right;
+
+}
+
