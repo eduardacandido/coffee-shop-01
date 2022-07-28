@@ -54,7 +54,7 @@
     text-decoration: underline;
 }
 
-.titulo {
+.title {
     width: 100%;
     height: 280px;
     padding-top: 90px;
@@ -119,9 +119,18 @@ strong {
 
 /*Home page*/
 .imgTitle {
-    background: var(--color4) url(imagens/coffee-beans-heart-1200.jpg) no-repeat center center;
+    background: var(--color4) url(imagens/coffee-hands.jpg) no-repeat center center;
     background-size: cover;
     height: 875px;
+
+}
+
+.mainTitle {
+    font-size: 3.5rem;
+    position: relative;
+    top: 92%;
+    padding-left: 15px;
+    color: var(--color2);
 
 }
 
@@ -199,6 +208,9 @@ iframe {
 
 @media only screen and (max-width: 600px) {
     .formatMapPanel {height: 400px;} 
+    .mainTitle {text-align: center; 
+                font-size: 3rem;
+                padding: 0px;}
 }
 
 @media only screen and (max-height: 850px) {
