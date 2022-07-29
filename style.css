@@ -84,6 +84,7 @@ header {
 
 nav {
     color: var(--color1);
+    height: 7vh;
 
 }
 
@@ -121,14 +122,14 @@ strong {
 .imgTitle {
     background: var(--color4) url(imagens/coffee-hands.jpg) no-repeat center center;
     background-size: cover;
-    height: 875px;
+    height: 93vh;
 
 }
 
 .mainTitle {
     font-size: 3.5rem;
     position: relative;
-    top: 92%;
+    top: 90%;
     padding-left: 15px;
     color: var(--color2);
 
@@ -213,8 +214,9 @@ iframe {
                 padding: 0px;}
 }
 
-@media only screen and (max-height: 850px) {
-    .imgTitle {height: 100%;}
+@media only screen and (max-height: 700px) {
+    nav {height: auto;}
+    .imgTitle {height: 91vh;}
 }
 
 /*About us page*/
