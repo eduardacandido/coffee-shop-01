@@ -219,6 +219,10 @@ iframe {
     .imgTitle {height: 91vh;}
 }
 
+@media only screen and (max-width: 600px) {
+    nav {height: auto;}
+}
+
 /*About us page*/
 .imgAboutUs {
     min-width: 65%;
