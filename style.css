@@ -124,15 +124,15 @@ strong {
 
 }
 
-@media only screen and (max-width: 800px) {
-    .img, p {width: 100%;}   
-}
-
 @media only screen and (max-width: 1021px) {
     .formatMapPanel {width: 100%;}
     .mapText {width: 100%; padding-left: 10px;}
     .imgProduct {width: 400px;}
 
+}
+
+@media only screen and (max-width: 800px) {
+    .img, p {width: 100%;}   
 }
 
 @media only screen and (max-width: 600px) {
@@ -142,6 +142,10 @@ strong {
                 font-size: 3rem;
                 padding: 0px;}
     nav {height: auto;}
+}
+
+@media only screen and (max-width: 300px) {
+
 }
 
 @media only screen and (max-height: 700px) {
