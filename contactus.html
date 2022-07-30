@@ -8,50 +8,92 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
 
-    <title>Document</title>
+    <title>Contact us - Roasted Beans Coffee</title>
 </head>
 
-<body class="container-fluid">
+<body>
     <header>
-        <h1 class="title">Contact us</h1>
+        <div><nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid" id="navColor">
+              <a class="navbar-brand" href="index.html">Roasted Beans Coffee</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="aboutus.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="staff.html">Staff</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="product.html">Products</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="contactus.html">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav></div>
+          <div class="row col-sm-12 title"><h1>Contact us</h1></div>
     </header>
 
     <main>
-        <div class="container">
+        <section class="contact">
+            <hr>
+            <h1 class="titleLight">Contact us</h1>
 
-            <div class="row">
-                <div class="col-sm-6">
-                    <h2>News</h2>
-                    <p>We won an award today!</p>
+            <div class="contactPanel col-sm-12">
+                <div class="inline-block clear">
+                    <div class="blockIcon clear">
+                        <div class="formatIcon">
+                            <a href="#" class="formatContact link"><img src="imagens/Facebook-icon.png" alt="Facebook Icon">Facebook</a>
+                        </div>
+                        <div class="formatIcon">
+                            <a href="#" class="formatContact link"><img src="imagens/Instagram-icon.png" alt="Instagram Icon">Instagram</a>
+                        </div>
+                        <div class="formatIcon">
+                            <a href="#" class="formatContact link"><img src="imagens/whatsapp-icon.png" alt="Whatsapp Icon">Whatsapp</a>
+                        </div>
+                        <div class="formatIcon">
+                            <a href="#" class="formatContact link"><img src="imagens/Mobile-Phone-1-icon.png" alt="Phone Icon">Number</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <h2>About us</h2>
-                    <p>We are based in Cardiff</p>
+                <div class="formatEmail clear">
+                    <a href="#" class="formatContact linkEmail">Roastedbeanscoffee@email.com</a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <form>
-                        <div class="form-group">
+        </section>
 
-                            <label>Email address:</label>
-                            <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
-
-                            <label>Enter a comment:</label>
-                            <input type="text" class="form-control" id="exampleInputComment" aria-describedby="commentHelp" placeholder="Enter a Comment" required>
-
-                        </div>
-
-                        <div>
-
-                            <button type="submit" class="btn btn-primary">Submit</button>
-
-                        </div>
-                    </form>
+        <section class="contact clear">
+            <hr>
+            <h2 class="titleLight">Leave us your feedback & get updates on special events</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <form>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" required>
+                                <label>Comment</label>
+                                <input type="text" class="form-control formatComment" id="exampleInputComment" aria-describedby="commentHelp" required>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-outline-dark button">Submit</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
+
+    <footer>
+        <p>&copy;<a href="index.html" class="formatLink">RoastedBeansCoffee 2022. All Rights reserved.</a></p>
+    </footer>
     
     <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
 </body>
