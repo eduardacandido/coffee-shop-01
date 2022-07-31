@@ -139,13 +139,15 @@ strong {
     .inline-block {display: inline-block;}
     .formatMapPanel {height: 400px;} 
     .mainTitle {text-align: center; 
-                font-size: 3rem;
+                font-size: 3em;
                 padding: 0px;}
     nav {height: auto;}
 }
 
-@media only screen and (max-width: 300px) {
-
+@media only screen and (max-width: 450px) {
+    .mainTitle {font-size: 2em;}
+    .newsPanel {width: 100%;}
+    .square {width: 90%;}
 }
 
 @media only screen and (max-height: 700px) {
@@ -157,14 +159,14 @@ strong {
 .imgTitle {
     background: var(--color4) url(imagens/coffee-hands.jpg) no-repeat center center;
     background-size: cover;
-    height: 93vh;
+    height: 100vh;
 
 }
 
 .mainTitle {
-    font-size: 3.5rem;
+    border: 1px solid black;
     position: relative;
-    top: 90%;
+    top: 85vh;
     padding-left: 15px;
     color: var(--color2);
 
