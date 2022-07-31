@@ -139,15 +139,16 @@ strong {
     .inline-block {display: inline-block;}
     .formatMapPanel {height: 400px;} 
     .mainTitle {text-align: center; 
-                font-size: 3em;
+                font-size: 2.8em;
                 padding: 0px;}
     nav {height: auto;}
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     .mainTitle {font-size: 2em;}
-    .newsPanel {width: 100%;}
+    .newsPanel {width: 98%; margin: 0px;}
     .square {width: 90%;}
+    .formatMapPanel {width: 350px; height: 350px;}
 }
 
 @media only screen and (max-height: 700px) {
