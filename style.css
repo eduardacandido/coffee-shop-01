@@ -228,7 +228,7 @@ iframe {
 
 /*About us page*/
 .imgAboutUs {
-    min-width: 65%;
+    width: 65%;
     margin: 10px 0px 10px 20px;
     float: right;
 
@@ -407,7 +407,6 @@ section.contact {
 @media only screen and (max-width: 800px) {
     .img, p {width: 100%;}     
     .imgAboutUs {
-        min-width: none;
         width: 100%;
     }
 }
