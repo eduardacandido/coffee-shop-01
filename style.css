@@ -52,13 +52,15 @@
 .formatLink:hover {
     color: var(--color1);
     text-decoration: underline;
+
 }
 
 .title {
     width: 100%;
     height: 280px;
-    padding-top: 90px;
+    padding-top: 100px;
     text-align: center;
+    font-family: var(--font3);
 
 }
 
@@ -124,36 +126,8 @@ strong {
 
 }
 
-@media only screen and (max-width: 1021px) {
-    .formatMapPanel {width: 100%;}
-    .mapText {width: 100%; padding-left: 10px;}
-    .imgProduct {width: 400px;}
-
-}
-
-@media only screen and (max-width: 800px) {
-    .img, p {width: 100%;}   
-}
-
-@media only screen and (max-width: 600px) {
-    .inline-block {display: inline-block;}
-    .formatMapPanel {height: 400px;} 
-    .mainTitle {text-align: center; 
-                font-size: 2.8em;
-                padding: 0px;}
-    nav {height: auto;}
-}
-
-@media only screen and (max-width: 500px) {
-    .mainTitle {font-size: 2em;}
-    .newsPanel {width: 98%; margin: 0px;}
-    .square {width: 90%;}
-    .formatMapPanel {width: 350px; height: 350px;}
-}
-
-@media only screen and (max-height: 700px) {
-    .imgTitle {height: 91vh;}
-    nav {height: auto;}
+p {
+    font-family: var(--font0);
 }
 
 /*Home page*/
@@ -165,11 +139,11 @@ strong {
 }
 
 .mainTitle {
-    border: 1px solid black;
     position: relative;
     top: 85vh;
     padding-left: 15px;
     color: var(--color2);
+    font-family: var(--font2);
 
 }
 
@@ -187,6 +161,7 @@ strong {
     padding: 10px 30px;
     text-align: left;
     color: var(--color4);
+    font-family: var(--font1);
 
 }
 
@@ -205,12 +180,26 @@ strong {
     color: var(--color4);
     background-color: #a5907e46;
     box-shadow: 1px 1px 5px var(--shadow);
+    font-family: var(--font1);
 
 }
 
 .newsText {
     text-align: justify;
+    font-family: var(--font1);
+    line-height: 1.8em;
+    padding: 5px 5px 10px 5px;
+    text-indent: 20px;
 
+}
+
+.titleBg {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 5px;
+    background-image: linear-gradient(to right, #a5907e6c, white);
+    color: var(--color4);
+    font-family: var(--font0);
 }
 
 .formatMapPanel {
@@ -225,6 +214,7 @@ strong {
 
 .mapText {
     width: 360px;
+    padding-left: 10px;
     text-align: justify;
     display: inline-block;
 
@@ -249,6 +239,7 @@ iframe {
     padding-left: 10px;
     margin-bottom: 5vh;
     color: var(--color1);
+    font-family: var(--font0);
 
 }
 
@@ -268,12 +259,6 @@ iframe {
     display: inline-block;
     text-align: center;
 
-}
-
-@media only screen and (max-width: 850px) {
-    .formatIcon {min-width: 80px; width: 23%;}
-    .blockIcon {width: 90%; margin: auto;}
-    .formatEmail {width: 90%; padding: 5px; display: block; margin: 30px auto 0px auto;}
 }
 
 .formatContact {
@@ -300,7 +285,8 @@ iframe {
 .linkEmail {
     border: 2px solid var(--color4);
     border-radius: 10px;
-    font-weight: bold;
+    font-weight: normal;
+    font-family: var(--font0);
     text-decoration: none;
     color: var(--color4);
     padding: 5px;
@@ -335,7 +321,7 @@ section.contact {
 .productPanel {
     display: inline-block;
     padding: 20px 0px;
-    margin-bottom: 30px;
+    margin: 30px 0px;
 }
 
 .formatImgProduct {
@@ -359,4 +345,203 @@ section.contact {
     padding: 10px;
     float: left;
     
+}
+
+@media only screen and (min-width: 1020px) {
+    .mainTitle {font-size: 4em;}
+}
+
+@media only screen and (max-width: 1021px) {
+    .formatMapPanel {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .mapText {
+        width: 100%;
+        padding: 30px 0px 0px 0px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .formatIcon {
+        min-width: 80px; 
+        width: 23%;
+    }
+    .blockIcon {
+        width: 90%; 
+        margin: auto;
+    }
+    .formatEmail {
+        width: 90%; 
+        padding: 5px; 
+        display: block; 
+        margin: 30px auto 0px auto;
+    }
+    .formatImgProduct {
+        width: 100%;
+        height: 100%;
+    }
+    .imgProduct {
+        width: 70%;
+        height: auto;
+        margin: 15px auto;
+        float: none;
+        display: block;
+    }
+    .textProduct {
+        width: 90%;
+        height: auto;
+        text-align: justify;
+        padding: 10px;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+    .textProduct > h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .img, p {width: 100%;}     
+    .imgAboutUs {
+        min-width: none;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .inline-block {
+        display: inline-block;
+    }
+    .formatMapPanel {
+        height: 400px;
+    } 
+    .mainTitle {
+        text-align: center; 
+        font-size: 2.8em;
+        padding: 0px;
+    }
+    nav {
+        height: auto;
+    }
+    .noPadding{
+        padding: 0px;
+    }
+    .square{
+        width: 300px;
+    }
+    .newsTitle{
+        width: 90%;              
+        margin: auto;
+    }
+    .newsText{
+        width: 100%;
+        margin: 0px;
+        text-align: justify;
+        margin-top: 2px;
+    }
+    .newsPanel{
+        margin: 0px;
+        width: 100%;
+    }
+    .formatMapPanel{
+        width: 100%;
+        height: 400px;
+    }
+    .mapText{
+        width: 90%;
+        padding-left: 0px;
+        display: block;
+        margin: auto;
+    }
+    .sectionmap{
+        padding: 10px;
+    }
+    .mainTitle{
+        font-size: xx-large;
+    }
+    .imgProduct {
+        width: 90%;
+    }    
+}
+
+@media only screen and (max-height: 700px) {
+    .imgTitle {height: 91vh;}
+    nav {height: auto;}
+}
+
+@media only screen and (max-width: 450px) {
+    .Padding10 {
+        padding-top: 10px;
+    }
+    .square {
+        width: 280px;
+    }
+    .newsTitle {
+        width: 90%;
+        margin: auto;
+    }
+    .newsText {
+        width: 100%;
+        margin: 0px;
+        text-align: justify;
+        margin-top: 2px;
+        line-height: 1.5em;
+        padding-top: 10px;
+    }
+    .newsPanel {
+        margin: 0px;
+        width: 100%;
+    }
+    .formatMapPanel {
+        width: 100%;
+        height: 400px;
+    }
+    .mapText {
+        width: 90%;
+        padding-left: 0px;
+        display: block;
+        margin: auto;
+    }
+    .sectionmap {
+        padding: 10px;
+    }
+    .mainTitle {
+        font-size: xx-large;
+        
+    }
+    .imgProduct {
+        width: 100%;
+    }
+    .textProduct {
+        width: 100%;
+    }
+    .formatIcon {
+        margin: 20px 7% 20px 12%;
+        padding-left: 10px;
+
+    }
+    .titleLight {
+        font-size: x-large;
+        text-align: center;
+    }
+    .blockIcon {
+        margin: auto;
+        display: block;
+        float: none;
+    }
+    .contact {
+        padding-bottom: 20px;
+    }
+    .footerContact p {
+        font-family: var(--font1);
+        font-size: 0.85em;
+    }
+    .mainTitle {
+        font-size: 1.8em;
+    
+    }
 }
