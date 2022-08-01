@@ -285,8 +285,8 @@ iframe {
 .linkEmail {
     border: 2px solid var(--color4);
     border-radius: 10px;
-    font-weight: normal;
-    font-family: var(--font0);
+    font-weight: bold;
+
     text-decoration: none;
     color: var(--color4);
     padding: 5px;
@@ -511,7 +511,6 @@ section.contact {
     }
     .mainTitle {
         font-size: xx-large;
-        
     }
     .imgProduct {
         width: 100%;
@@ -522,7 +521,6 @@ section.contact {
     .formatIcon {
         margin: 20px 7% 20px 12%;
         padding-left: 10px;
-
     }
     .titleLight {
         font-size: x-large;
@@ -542,6 +540,16 @@ section.contact {
     }
     .mainTitle {
         font-size: 1.8em;
-    
+    }
+    .linkEmail {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .formatIcon {
+        float: left;
+        margin: 20px 6% 20px 6%;
+        padding-left: 10px;
     }
 }
