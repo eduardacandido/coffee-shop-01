@@ -30,7 +30,7 @@
     --shadow: #00000056;
 
     /* Fonts */
-    --font0: Verdana, Geneva, Tahoma, sans-serif;   /* serif font */
+    --font: Verdana, Geneva, Tahoma, sans-serif;   /* serif font */
     --font1: 'sunday';                              /* sans-serif font */
     --font2: 'demo';                                /* cursive title */
     --font3: 'latte';                               /* simple title */
@@ -127,7 +127,7 @@ strong {
 }
 
 p {
-    font-family: var(--font0);
+    font-family: var(--font);
 }
 
 /*Home page*/
@@ -199,7 +199,7 @@ p {
     padding: 5px;
     background-image: linear-gradient(to right, #a5907e6c, white);
     color: var(--color4);
-    font-family: var(--font0);
+    font-family: var(--font);
 }
 
 .formatMapPanel {
@@ -239,7 +239,7 @@ iframe {
     padding-left: 10px;
     margin-bottom: 5vh;
     color: var(--color1);
-    font-family: var(--font0);
+    font-family: var(--font);
 
 }
 
